@@ -1,0 +1,4 @@
+node_modules
+.envgit remote add origin https://github.com/ms8382869-art/telegram-bot.git
+git branch -M main
+git push -u origin main
