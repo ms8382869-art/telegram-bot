@@ -18,7 +18,7 @@ async function searchProduct(query) {
   const sheets = google.sheets({ version: "v4", auth });
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: SHEET_ID,
-    range: "Sheet1!A:D",
+    range: "الورقة1!A:D",
   });
   const rows = res.data.values;
   const results = rows.filter(row => row[0] && row[0].toLowerCase().includes(query.toLowerCase()));
